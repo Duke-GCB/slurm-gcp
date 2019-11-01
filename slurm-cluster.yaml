@@ -81,7 +81,7 @@ resources:
     # Optional timer fields
     #suspend_time               : 300
 
-    default_users           : < GCP user email addr, comma separated >
+    default_users           : dan_leehr_gmail_com, johnbradley2008_gmail_com
     #slurm_version           : 19.05-latest
     #default_account         : default
 
