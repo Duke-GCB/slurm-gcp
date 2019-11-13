@@ -81,7 +81,7 @@ resources:
   type: gcp-types/file-v1beta1:projects.locations.instances
   properties:
     parent: projects/{{ env["project"] }}/locations/{{ properties["zone"] }}
-    instanceId: slurm-filestore
+    instanceId: {{properties["cluster_name"]}}-slurm-filestore
     tier: STANDARD
     description: slurm filestore
     networks:
