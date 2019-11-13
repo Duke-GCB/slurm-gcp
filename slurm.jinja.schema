@@ -44,6 +44,7 @@ required:
 - slurm_version
 - static_node_count
 - zone
+- nfs_filestore_capacity
 
 optional:
 - compute_disk_type
@@ -66,8 +67,6 @@ optional:
 - munge_key
 - nfs_apps_dir
 - nfs_apps_server
-- nfs_home_dir
-- nfs_home_server
 - preemptible_bursting
 - shared_vpc_host_project
 - suspend_time
@@ -235,15 +234,6 @@ properties:
   nfs_apps_server:
     type        : string
     description : IP address of NFS server hosting apps dir
-
-  nfs_home_dir:
-    type        : string
-    default     : /home
-    description : location of the nfs_home directory on the nfs_home_server.
-
-  nfs_home_server:
-    type        : string
-    description : IP address of NFS server hosting home dir
 
   preemptible_bursting:
     type        : boolean

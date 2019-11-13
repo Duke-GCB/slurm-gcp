@@ -8,6 +8,5 @@ toil-cwl-runner \
   --maxLocalJobs 20 \
   --batchSystem slurm \
   --singularity \
-  --workDir ${HOME}/workdir \
   sleep-echo/workflow.cwl \
   sleep-echo/job.json
