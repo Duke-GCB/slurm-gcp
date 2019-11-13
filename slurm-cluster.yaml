@@ -38,7 +38,7 @@ resources:
     #shared_vpc_host_proj    : < my-shared-vpc-project-name >
 
     controller_machine_type : n1-standard-2
-    compute_machine_type    : n1-standard-16
+    compute_machine_type    : n1-standard-32
     login_machine_type      : n1-standard-2
     #login_node_count        : 0
 
@@ -60,8 +60,8 @@ resources:
     #     key1 : value1
     #     key2 : value2
 
-    #compute_disk_type          : pd-standard
-    #compute_disk_size_gb       : 10
+    compute_disk_type          : pd-standard
+    compute_disk_size_gb       : 500
     #compute_labels             :
     #     key1 : value1
     #     key2 : value2
