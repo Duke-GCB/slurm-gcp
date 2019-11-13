@@ -9,6 +9,7 @@ pip install --upgrade pip
 
 # Clone repos for workflow and toil
 git clone https://github.com/dleehr/sleep-echo.git
+git clone https://github.com/bespin-workflows/exomeseq-gatk4.git
 git clone https://github.com/DataBiosphere/toil.git
 
 # Install toil from source
